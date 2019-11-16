@@ -1,6 +1,6 @@
 # SeguimientoPedido
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.2.
+Maquetación del Modulo de Seguimiento de pedido en proyecto de quimiventas solo como muestra de trabajo para portafolis
 
 ## Development server
 
