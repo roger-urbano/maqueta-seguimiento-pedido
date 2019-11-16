@@ -1,0 +1,27 @@
+@import "../../../../../app/core/assets/scss/variables";
+
+.card-traking {
+    &.card-invoice {
+        .card-traking-title {
+            position: relative;
+            padding-left: 1.8rem;
+            .ficon {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+        }
+
+        .card-list-info, .card-traking-footer  {
+            padding-left: 1.8rem;
+        }
+        .link-modal {
+            white-space: nowrap;
+            span {
+                border-bottom: 1px solid $color-one;
+                cursor: pointer;
+            }
+        }
+    }
+}

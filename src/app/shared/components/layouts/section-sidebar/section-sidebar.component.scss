@@ -1,0 +1,83 @@
+@import "../../../../core/assets/scss/variables";
+@import "../../../../core/assets/scss/mixins";
+.sidebar {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 218px;
+    z-index: 1030;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    @include transitionTwo (all 0.3s cubic-bezier(0.0,0.0,0.2,1));
+    background-color: $gray-0;
+    overflow-y: auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+    .sidebar-btn {
+        color: $color-one;
+    }
+    .sidebar-title {
+        color: $gray-text;
+    }
+    .list-group {
+        .list-group-item {
+            font-weight: bold;
+            border:none;
+            border-radius: 0;
+            color: $color-two;
+            transition: background-color 0.3s;
+            background-color: transparent;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            &:hover {
+                background-color: $gray-100;
+            }
+            &.active, &:focus {
+                color: $white;
+                background-color: $color-one;
+            }
+        }
+    }
+    .sidebar-off {
+        color: $color-two;
+        display: block;
+        background-color: $gray-100;
+    }
+}
+.separador {
+    display: block;
+    margin: .5rem 0rem .5rem 1rem;
+    border-bottom: 1px solid  $gray-100;
+}
+.animated {
+    &.sidebar-faster {
+        -webkit-animation-duration: .3s;
+        animation-duration: .3s;
+    }
+}
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        background-color: $color-one;
+        .sidebar-btn, .sidebar-title {
+            color: $white;
+            opacity: .8;
+        }
+        .list-group {
+            .list-group-item {
+                color: $white;
+                &.active, &:hover {
+                    color: $color-one;
+                    background-color: $white;
+                }
+            }
+        }
+        .sidebar-off {
+            color: $white;
+            background-color: #DE851C;
+        }
+    }
+    .separador {
+        opacity: .6;
+    }
+}

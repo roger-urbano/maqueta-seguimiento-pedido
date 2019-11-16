@@ -1,0 +1,26 @@
+<div @parentFadeAnimate class="wrap-dispatch">
+    <div class="content-dispatch pre-dispatch position-static pt-5 pb-1">
+        <div class="title-dispatch mb-3">
+            <h3 class="mb-0 d-flex align-items-center"><i class="ficon-archive mr-2 icono-title-dispatch"></i> Estados Pre despacho</h3>
+        </div>
+        <div class="list-dispatch row">
+            <qsi-card-state 
+                class="col-6 col-sm-4 col-md-4 col-lg-3 mb-3 col-item" 
+                [dispatchStates]="item"
+                *ngFor="let item of preDispatchStates, let i = index">
+            </qsi-card-state>
+        </div>
+    </div>
+    <div class="content-dispatch post-dispatch position-static mt-3 pt-4">
+        <div class="title-dispatch mb-3">
+            <h3 class="mb-0 d-flex align-items-center"><i class="ficon-truck i mr-2 icono-title-dispatch"></i> Estados post despacho</h3>
+        </div>
+        <div class="list-dispatch row">
+            <qsi-card-state 
+                class="col-6 col-sm-4 col-md-4 col-lg-3 mb-3 col-item" 
+                [dispatchStates]="item" 
+                *ngFor="let item of postDispatchStates">
+            </qsi-card-state>
+        </div>
+    </div>
+</div>

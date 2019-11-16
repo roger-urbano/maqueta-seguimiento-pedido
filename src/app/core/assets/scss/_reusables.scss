@@ -1,0 +1,77 @@
+body, html {
+    height: 100%;
+}
+body {
+    background-color: $gray-0 !important;
+}
+.pointer {
+    cursor: pointer !important;
+}
+
+//Colores
+.color-one {
+    color: $color-one !important;
+}
+.color-two {
+    color: $color-two !important;
+}
+.color-three {
+    color: $color-three !important;
+}
+.color-gray {
+    color:  $gray-100 !important;
+}
+.bg-color-one {
+    background-color: $color-one !important;
+}
+.bg-color-two {
+    background-color: $color-two !important;
+}
+.bg-color-three {
+    background-color: $color-three !important;
+}
+.bg-color-gray {
+    background-color: $gray-100 !important;
+}
+
+//FONTS
+.text-s {
+    font-size: 90% !important;
+}
+.text-sm {
+    font-size: 80% !important;
+}
+.text-xs {
+    font-size: 70% !important;
+}
+.text-lg{
+    font-size: 100% !important;
+}
+.text-line {
+    line-height: 1rem;
+}
+.text-line-h {
+    line-height: 1;
+}
+
+/* UNIFICAR INPUT NUMBER */
+input.form-number::-webkit-outer-spin-button,
+input.form-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input.form-number[type=number] {
+  -moz-appearance:textfield;
+}
+
+//ICONS EXTERNOS 
+
+.ficon-lg {
+    font-size: 2rem;
+}
+.ficon-sm {
+    font-size: 1.5rem;
+}
+.ficon-xs {
+    font-size: .9rem;
+}

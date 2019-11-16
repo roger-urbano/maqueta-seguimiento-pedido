@@ -1,0 +1,54 @@
+<qsi-seguimiento-breadcrumbs [title]="title" [icon]="icon" class="d-block d-md-none"></qsi-seguimiento-breadcrumbs>
+
+<div class="mt-3 mt-md-4" @fadeInUp>
+    <div class="d-flex justify-content-between align-items center">
+        <h6 class="color-two my-0 d-flex align-items-center">
+            <i class="ficon-box color-one mr-1"></i>
+            PEDIDO | N° 21810368
+        </h6>
+        <span class="ml-auto d-flex align-items-center">
+            <a  class="ficon-arrow-left-circle ficon-lg metric-detail-subtitle text-decoration-none pointer color-one d-none d-md-block"
+                (click)="backPage()">
+            </a>
+        </span>
+    </div>
+    <div class="row pt-3 wrap-card-flow">
+        <qsi-card-timeline-document 
+            class="col-md-12 col-sm-12 col-12 mb-3" 
+            *ngFor="let item of listTimeline; let i = index"
+            [timeline]="item">
+        </qsi-card-timeline-document>
+    </div>
+    <div class="row mt-3 mb-3">
+        <div class="col-12 wrap-card-credit pt-4">
+            <div class="card-traking card-invoice p-3 card-credit" @fadeInUpMulti>
+                <div class="card-traking-header d-flex mb-3">
+                    <i class="ficon-file-text ficon-sm color-one ficon mr-2"></i>
+                    <h4 class="card-traking-title text-sm color-one font-weight-bold mb-0">
+                        Crédito 45 días fecha factura + 15 DG (PE)
+                        <small class="d-block text-sm color-two">Factura cliente</small>
+                    </h4>
+                </div>
+                <div class="card-traking-body card-credit-body row">
+                    <div class="col-sm-3 col-3 card-credit-column text-center px-2 px-sm-3 text-line-h ">
+                        <strong class="color-three text-sm d-block">0021810191</strong>
+                        <small class="color-three text-xs">Factura SAP</small>
+                    </div>
+                    <div class="col-sm-4 col-4 card-credit-column text-center px-2 px-sm-3 text-line-h ">
+                        <strong class="color-three text-sm d-block">01-0FF01-1754146</strong>
+                        <small class="color-three text-xs">Factura cliente</small>
+                    </div>
+                    <div class="col-sm-2 col-2 card-credit-column text-center px-2 px-sm-3 text-line-h ">
+                        <strong class="color-three text-sm d-block">PEN</strong>
+                        <small class="color-three text-xs">Moneda</small>
+                    </div>
+                    <div class="col-sm-3 col-3 card-credit-column text-center px-2 px-sm-3 text-line-h ">
+                        <strong class="color-three text-sm d-block">07/10/2019</strong>
+                        <small class="color-three text-xs">Fecha Fact</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

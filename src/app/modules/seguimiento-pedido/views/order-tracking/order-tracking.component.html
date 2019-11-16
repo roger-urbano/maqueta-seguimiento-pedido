@@ -1,0 +1,8 @@
+<qsi-filter-order></qsi-filter-order>
+<div class="row pt-3" @fadeInUp>
+    <qsi-card-order 
+        class="col-sm-6 col-12 mb-3" 
+        *ngFor="let item of listOrders"
+        [order]="item">
+    </qsi-card-order>
+</div>

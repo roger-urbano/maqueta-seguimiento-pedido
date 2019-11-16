@@ -1,0 +1,17 @@
+@mixin bg-gradient($direction) {
+	background: linear-gradient(to $direction, rgba(255,144,41,1) 0%, rgba(252,170,10,1) 100%);
+}
+
+@mixin transition(){
+	transition: all .25s ease;
+}
+
+
+
+@mixin transitionTwo ($argument...) {
+	-webkit-transition: $argument;
+	-moz-transition: $argument;
+	-ms-transition: $argument;
+	-o-transition: $argument;
+	transition: $argument;
+}

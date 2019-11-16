@@ -1,0 +1,30 @@
+@import "../../../../core/assets/scss/variables";
+.menu-pedidos-responsive {
+    text-align: center;
+    background-color: white;
+    a {
+        color: $color-three;
+        text-decoration: none;
+        position: relative;
+        &.active {
+            color: $color-one;
+            &::before {
+                content: '';
+                height: 2px;
+                background-color: $color-one;
+                width: 60%;
+                position: absolute;
+                left: auto;
+                bottom: 5px;
+            }
+        }
+    }
+    &.navbar-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 
+    }
+}

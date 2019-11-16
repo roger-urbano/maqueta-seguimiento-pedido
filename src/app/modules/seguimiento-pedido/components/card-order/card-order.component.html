@@ -1,0 +1,32 @@
+<div @fadeInUpMulti>
+    <div class="card-traking p-3">
+        <div class="card-traking-header d-flex justify-content-between align-items-center">
+            <h4 class="cardt-traking-title text-sm color-two font-weight-bold">{{order.order}}   {{order.name}}</h4>
+            <div class="dropdown">
+                <button class="btn  dropdown-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="ficon-more-vertical ficon-sm color-one"></i>
+                 </button>
+                 <div class="dropdown-menu dropdown-shadow dropdown-menu-right border-0" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item text-s" [routerLink]="'/tracking/order-detail'"><i class="ficon-alert-circle color-three mr-2"></i>Detalle de pedido</a>
+                    <a class="dropdown-item text-s" [routerLink]="'/tracking/order-invoice'"><i class="ficon-file-text color-three mr-2"></i>Facturas del pedido</a>
+                    <a class="dropdown-item text-s" [routerLink]="'/tracking/order-original'"><i class="ficon-box color-three mr-2"></i>Pedido original</a>
+                    <a class="dropdown-item text-s" [routerLink]="'/tracking/customer-flow'"><i class="ficon-corner-down-right color-three mr-2"></i>Flujo de cliente</a>
+                    <a class="dropdown-item text-s" [routerLink]="'/tracking/document-flow'"><i class="ficon-corner-down-right color-three mr-2"></i>Flujo de documentos</a>
+                    <a class="dropdown-item text-s" [routerLink]="'/tracking/order-traceability'"><i class="ficon-trending-down color-three mr-2"></i>Trazabilidad de pedidos</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-traking-body d-flex justify-content-between flex-row align-items-lg-stretch">
+            <ul class="card-list-info list-unstyled mb-0">
+                <li class="card-item-info text-sm color-three"><i class="ficon-hash color-one mr-1"></i> <strong class="mr-1">Fecha:</strong>{{order.date}}</li>
+                <li class="card-item-info text-sm color-three"><i class="ficon-calendar color-one mr-1"></i> <strong class="mr-1">Pedido:</strong>{{order.order}}</li>
+                <li class="card-item-info text-sm color-three"><i class="ficon-user color-one mr-1"></i> <strong class="mr-1">Usuario:</strong>{{order.user}}</li>
+                <li class="card-item-info text-sm color-three"><i class="ficon-box color-one mr-1"></i> <strong class="mr-1">Tipo Ped:</strong>{{order.type}}</li>
+            </ul>
+            <div class="card-traking-price d-flex flex-column justify-content-end">
+                <span class="badge badge-pill badge-01 d-flex align-items-end"><i class="{{order.icon}} ficon-xs text-white mr-1"></i>{{order.state}}</span>
+                <strong class="card-price text-right mt-2 color-one text-s">S/451.64</strong>
+            </div>
+        </div>
+    </div>
+</div>

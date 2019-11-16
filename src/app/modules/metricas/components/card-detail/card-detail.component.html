@@ -1,0 +1,47 @@
+
+    <div class="metric-detail-card" @fadeInUpMulti>
+        <div class="d-flex justify-content-between">
+            <h6 class="text-sm color-two font-weight-bold m-0">{{order.code}}&nbsp;&nbsp;{{order.name}}</h6>
+            <div class="dropdown">
+                <button class="btn p-0 d-flex" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="ficon-more-vertical ficon-sm color-one"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right border-0 dropdown-shadow" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item text-sm px-3" href="#" 
+                        [routerLink]="[item.url]" routerLinkActive="active"  *ngFor="let item of listDataDropDown">
+                        <i [ngClass]="item.svg" class="color-three mr-1"></i>
+                        {{ item.name }}
+                    </a>
+                </div>
+            </div>
+        </div>
+        <small class="color-three d-block">
+            <i class="ficon-hash color-one mr-1"></i>
+            <b>Pedido:</b>&nbsp;{{order.order}}
+        </small>
+        <small class="color-three d-block d-flex align-items-center">
+            <i class="ficon-calendar color-one mr-1"></i>
+            <b>Fecha:</b>&nbsp;{{order.date}}
+            <span   class="ml-auto badge badge-pill d-flex align-items-end" 
+                    [ngClass]="{    'badge-01': typeMetric === 1,
+                                    'badge-02': typeMetric === 2,
+                                    'badge-03': typeMetric === 3,
+                                    'badge-04': typeMetric === 4,
+                                    'badge-05': typeMetric === 5,
+                                    'badge-06': typeMetric === 6,
+                                    'badge-07': typeMetric === 7,
+                                    'badge-08': typeMetric === 8,
+                                    'badge-09': typeMetric === 9,
+                                    'badge-10': typeMetric === 10   }">
+                <i class="ficon-truck ficon-xs text-white mr-1"></i>{{titleMetric}}</span>
+        </small>
+        <small class="color-three d-block">
+            <i class="ficon-user color-one mr-1"></i>
+            <b>Usuario:</b>&nbsp;{{order.user}}
+        </small>
+        <small class="color-three d-block d-flex align-items-center">
+            <i class="ficon-calendar color-one mr-1"></i>
+            <b>Tipo Ped:</b>&nbsp;{{order.type}}
+            <span class="ml-auto font-weight-bold color-one">S/{{order.amount}}</span>
+        </small>
+    </div>

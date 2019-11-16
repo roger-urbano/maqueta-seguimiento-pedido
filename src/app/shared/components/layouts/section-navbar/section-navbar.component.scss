@@ -1,0 +1,21 @@
+@import "../../../../core/assets/scss/variables";
+@import "../../../../core/assets/scss/mixins";
+.navbar-pedidos {
+    position: absolute;
+    max-width: 16.666667%;
+    width: 100%;
+    z-index: 1025;
+    top:0;
+    left: 0;
+    transition: all .3s ease;
+    &.navbar-fixed {
+        position: fixed;
+    }
+    a {
+        color: $color-three;
+        @include transitionTwo (color 0.3s cubic-bezier(0.0,0.0,0.2,1));
+        &:hover, &.active {
+            color: $color-one;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+<div class="row py-4 collapsed-filter">
+    <div class="wrap-filter col-sm-12 col-12 d-flex pr-sm-4 d-flex justify-content-between align-items-center flex-wrap">
+        <div class="input-group mr-md-3">
+            <img class="icono-input" src="assets/images/calendario.svg" alt="">
+            <input type="text"
+                class="form-control border-0 text-s"
+                placeholder="Desde"
+                class="form-control"
+                bsDatepicker
+                [bsConfig]="{containerClass:'theme-dark-blue'}">
+               
+        </div>
+        <div class="input-group mr-md-3">
+            <img class="icono-input" src="assets/images/calendario.svg" alt="">
+            <input type="text"
+                class="form-control border-0 text-s"
+                placeholder="Hasta"
+                class="form-control"
+                bsDatepicker
+                [bsConfig]="{containerClass:'theme-dark-blue'}">
+        </div>
+        <div class="input-group mr-md-3 mt-3 mt-md-0 input-search">
+            <i class="icono-input ficon-search"></i>
+            <input type="search" class="form-control border-0" placeholder="Buscar clientes" aria-label="Recipient's username"
+                aria-describedby="basic-addon2">
+        </div>
+        <div class="custom-control custom-checkbox input-check d-flex mt-3 mt-md-0 align-items-center">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label text-s color-two text-bold" for="customCheck1"><strong>Nº pedido</strong></label>
+        </div>
+    </div>
+
+    <div class="col-12 mt-3">
+        <button class="button">Aplicar</button>
+    </div>
+</div>

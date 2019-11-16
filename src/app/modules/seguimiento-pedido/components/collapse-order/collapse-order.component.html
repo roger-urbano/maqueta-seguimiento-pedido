@@ -1,0 +1,65 @@
+<div>
+    <div class="order-trace-card">
+        <div class="d-flex align-items-center justify-content-between mb-2">
+            <div class="d-flex flex-column">
+                <h6 class="color-one m-0 text-sm">TENA SLIP LARGE X1 EMP. PEGA DESPEGA</h6>
+                <small class="d-block color-three text-xs">Descripción</small>
+            </div>
+            <button class="d-flex btn btn-sm p-0 collapsed" type="button" data-toggle="collapse"
+                [attr.data-target]="'#collapsePanelTrace' + order.code" [attr.aria-controls]="'#collapsePanelTrace' + order.code"
+                aria-expanded="false">
+                <i class="ficon-chevron-down color-one ficon-sm"></i>
+            </button>
+        </div>
+        <div class="row no-gutters bg-trace color-three">
+            <div class="col-3 text-center">
+                <h6 class="m-0 text-sm">000101</h6>
+                <small class="d-block text-line text-xs">Pos</small>
+            </div>
+            <div class="col-3 text-center">
+                <h6 class="m-0 text-sm">000101</h6>
+                <small class="d-block text-line text-xs">Pos</small>
+            </div>
+            <div class="col-3 text-center">
+                <h6 class="m-0 text-sm">000101</h6>
+                <small class="d-block text-line text-xs">Pos</small>
+            </div>
+        </div>
+        <div class="collapse" id="collapsePanelTrace{{order.code}}" data-parent="#collapsePanel">
+            <div class="row no-gutters bg-trace color-three mt-3">
+                <div class="col-3 text-center mb-3">
+                    <h6 class="m-0 text-sm">4031000887</h6>
+                    <small class="d-block text-line text-xs">Entrega</small>
+                </div>
+                <div class="col-3 text-center mb-3">
+                    <h6 class="m-0 text-sm">14/10/2019</h6>
+                    <small class="d-block text-line text-xs">Fecha Entrega</small>
+                </div>
+                <div class="col-3 text-center mb-3">
+                    <h6 class="m-0 text-sm">10:00</h6>
+                    <small class="d-block text-line text-xs">Hora Entrega</small>
+                </div>
+                <div class="col-3 text-center mb-3">
+                    <h6 class="m-0 text-sm">J Carranza</h6>
+                    <small class="d-block text-line text-xs">Usuario Entrega</small>
+                </div>
+                <div class="col-3 text-center">
+                    <h6 class="m-0 text-sm">0021683935</h6>
+                    <small class="d-block text-line text-xs">Número OT</small>
+                </div>
+                <div class="col-3 text-center">
+                    <h6 class="m-0 text-sm">14/10/2019</h6>
+                    <small class="d-block text-line text-xs">Fecha OT</small>
+                </div>
+                <div class="col-3 text-center">
+                    <h6 class="m-0 text-sm">10:00</h6>
+                    <small class="d-block text-line text-xs">Hora OT</small>
+                </div>
+                <div class="col-3 text-center">
+                    <h6 class="m-0 text-sm">J Carranza</h6>
+                    <small class="d-block text-line text-xs">Usuario OT</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

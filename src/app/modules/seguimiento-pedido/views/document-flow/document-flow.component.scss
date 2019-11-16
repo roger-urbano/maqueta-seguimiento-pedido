@@ -1,0 +1,105 @@
+@import "../../../../../app/core/assets/scss/variables";
+
+.wrap-card-flow {
+    position: relative;
+    &:before {
+        content: "";
+        width: 10px;
+        height: 80%;
+        background-color: #E1E1E1;
+        position: absolute;
+        left: 1.4rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.card-flow {
+    .success {
+        background-color: #28C76F !important;
+    }
+    .warning {
+        background-color: #FCAA0A !important;
+    }
+}
+
+.card-flow-done {
+    width: 35px !important;
+
+    .box-ficon {
+        width: 26px;
+        height: 26px;
+        background-color: silver;
+
+        // &.success {
+        //     background-color: #28C76F
+        // }
+        // &.warning {
+        //     background-color: #FCAA0A;
+        // }
+    }
+}
+
+.card-flow-body {
+    width: calc(100% - 35px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 0.6rem;
+    line-height: 1;
+    min-height: 40px;
+}
+
+.wrap-card-credit {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        height: 1px;
+        background-color: #D3D3D3;
+        width: calc(100% - 30px);
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .card-flow-title,
+    .card-flow-date,
+    .card-flow-hour {
+        width: 33.3% !important;
+        max-width: 33.3% !important;
+        flex: 0 0 33.3%;
+    }
+
+    .card-flow-title {
+        order: 2;
+    }
+
+    .card-flow-date {
+        order: 3;
+    }
+
+    .card-flow-hour {
+        order: 4;
+    }
+
+    .card-flow-badge {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100%;
+        order: 1;
+        text-align: left !important;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-credit-body {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+        .card-credit-column {
+            min-width: 140px;
+        }
+    }
+}

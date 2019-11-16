@@ -1,0 +1,35 @@
+<div class="row" @fadeInUp>
+    <div class="col metric-detail d-flex align-items-center mt-0 mt-md-4">
+        <img [src]="iconMetric + '.svg' " class="metric-detail-icon d-none d-md-inline-block" width="34" height="34" alt="icono_detail">
+        <img [src]="iconMetric + '-mobile.svg' " class="metric-detail-icon d-inline-block d-md-none" width="34" height="34" alt="icono_detail">
+        <span class="d-flex flex-column pl-2">
+            <h6 class="m-0 font-weight-bold metric-detail-title">{{titleMetric}}</h6>
+            <small class="metric-detail-subtitle">Pre despacho</small>
+        </span>
+        <span class="ml-auto d-flex align-items-center">
+            <button class="btn p-0 d-flex align-items-center button-filter" 
+                    data-toggle="collapse"
+                    data-target="#collapseExample" 
+                    >
+                <i class="ficon-filter ficon-sm metric-detail-subtitle"></i>
+            </button>
+            <span class="mx-3 d-inline-block h-100 border-detail">&nbsp;</span>
+            <a routerLink="/metrics/list" class="ficon-arrow-left-circle ficon-lg metric-detail-subtitle text-decoration-none"></a>
+        </span>
+    </div>
+</div>
+<div class="collapse row" id="collapseExample" @fadeInUp>
+    <div class="col-12">
+        <qsi-filter-order></qsi-filter-order>
+    </div>
+</div>
+<div class="row mt-3 mt-md-4" @fadeInUp>
+    <qsi-card-detail 
+        class="col-md-6" 
+        *ngFor="let item of listOrders" 
+        [order]="item"
+        [typeMetric]="typeMetric" 
+        [titleMetric]="titleMetric"
+        [listDataDropDown]="listDataDropDown">
+    </qsi-card-detail>
+</div>

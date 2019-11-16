@@ -1,0 +1,40 @@
+@import "../../../../../app/core/assets/scss/variables";
+
+.wrap-card-flow {
+    position: relative;
+    &:before {
+        content: "";
+        width: 10px;
+        height: 80%;
+        background-color: #E1E1E1;
+        position: absolute;
+        left: 1.4rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.card-flow-done {
+    width: 35px !important;
+
+    .box-ficon {
+        width: 26px;
+        height: 26px;
+        background-color: silver;
+
+        &.success {
+            background-color: #28C76F
+        }
+        &.warning {
+            background-color: #FCAA0A;
+        }
+    }
+}
+
+.card-flow-body {
+    width: calc(100% - 35px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 0.6rem;
+    line-height: 1;
+    min-height: 40px;
+}

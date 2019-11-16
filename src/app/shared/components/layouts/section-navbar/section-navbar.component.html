@@ -1,0 +1,14 @@
+<div class="position-relative">
+	<div class="p-3 navbar-pedidos" [ngClass]="{ 'navbar-fixed': scrollActive }">
+		<ul class="nav flex-column" [ngClass]="{ 'pt-5': !scrollActive }" *ngIf="listMenu.length">
+			<li class="nav-item" *ngFor="let item of listMenu; let i = index">
+				<a class="nav-link d-flex flex-column align-items-center justify-content-center py-4 px-0"
+					[routerLink]="[item.url]"
+					routerLinkActive="active"> 
+					<i class="mb-2 ficon-sm" [ngClass]="item.icon"></i>
+					<span class="d-block text-center">{{ item.name }}</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>

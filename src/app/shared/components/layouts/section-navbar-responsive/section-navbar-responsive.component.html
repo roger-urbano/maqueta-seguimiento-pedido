@@ -1,0 +1,11 @@
+<div class="menu-pedidos-responsive" [ngClass]="{ 'navbar-fixed': scrollActive }">
+    <div class="row no-gutters h-100" *ngIf="listMenu.length">
+        <a href="#" *ngFor="let item of listMenu; let i = index"
+            class="col-6 justify-content-center d-flex align-items-center flex-column py-2"
+            [routerLink]="[item.url]"
+            routerLinkActive="active">
+                <i class="ficon-sm" [ngClass]="item.icon"></i>
+                <small>{{ item.name }}</small>
+        </a>
+    </div>
+</div>

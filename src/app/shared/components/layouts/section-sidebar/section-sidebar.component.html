@@ -1,0 +1,39 @@
+<div *ngIf="showMenu" class="sidebar animated sidebar-faster" [ngClass]="{'slideInLeft': showMenu, 'slideOutLeft': stateClose}">
+    <div class="p-3">
+        <button class="btn sidebar-btn px-0 d-flex" type="button" (click)="closeMenu()">
+            <!-- <i class="fas fa-times fa-lg"></i> -->
+            <i class="material-icons"> close </i>
+        </button>
+        <span class="sidebar-title h6 d-block my-3 font-weight-light">MENU</span>
+    </div>
+    <div class="list-group pr-3">
+        <a href="#" class="d-flex list-group-item list-group-item-action active"> 
+        <!-- <i class="far fa-check-circle fa-lg mr-1"></i> -->
+        <i class="material-icons mr-2 w-menu"> check_circle </i>
+        Toma de pedidos
+        </a>
+        <span class="separador"></span>
+        <a href="#" class="d-flex list-group-item list-group-item-action">
+        <!-- <i class="far fa-chart-bar fa-lg mr-1"></i> -->
+        <i class="material-icons mr-2"> equalizer </i>
+            Indicadores
+        </a>
+        <span class="separador"></span>
+        <a href="#" class="d-flex list-group-item list-group-item-action">
+        <!-- <i class="far fa-question-circle fa-lg mr-1"></i> -->
+        <i class="material-icons mr-2"> room </i>
+            Rutas
+        </a>
+        <span class="separador"></span>
+        <a href="#" class="d-flex list-group-item list-group-item-action">
+        <!-- <i class="far fa-calendar-check fa-lg mr-1"></i> -->
+        <i class="material-icons mr-2"> help_outline </i>
+            Consultas
+        </a>
+    </div>
+    <a href="#" class="d-flex list-group-item list-group-item-action mt-auto sidebar-off border-0 font-weight-bold">
+        <i class="material-icons mr-2"> power_settings_new </i>
+        Salir
+    </a>
+</div>
+      

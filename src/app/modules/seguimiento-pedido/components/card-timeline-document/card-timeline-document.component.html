@@ -1,0 +1,25 @@
+<div class="card-flow d-flex align-items-center justify-content-between" @fadeInUpMulti>
+    <div class="card-flow-done">
+        <span
+            class="box-ficon rounded-circle d-flex align-items-center text-white justify-content-center {{ timeline.status }}">
+            <i class="ficon-check text-lg {{ timeline.icon }}"></i>
+        </span>
+    </div>
+    <div class="card-flow-body row py-2 mx-0 d-flex align-items-center">
+        <div class="col-md-2 col-sm-3 col-3 card-flow-title text-center px-2 px-sm-3">
+            <strong class="color-three text-sm d-block">{{ timeline.feature }}</strong>
+            <small class="color-three text-xs">Documento</small>
+        </div>
+        <div class="col-md-3 col-sm-3 col-3 card-flow-date text-center px-2 px-sm-3">
+            <strong class="color-three text-sm d-block">Pedido de venta</strong>
+            <small class="color-three text-xs">Tipo de doc</small>
+        </div>
+        <div class="col-md-2 col-sm-3 col-3 card-flow-hour text-center px-2 px-sm-3">
+            <strong class="color-three text-sm d-block">30/10/2019</strong>
+            <small class="color-three text-xs">Tipo de doc</small>
+        </div>
+        <div class="col-md-5 col-sm-3 col-3 card-flow-badge text-right px-2 px-sm-3">
+            <span class=" badge badge-pill badge-01 {{ timeline.status }}">Concluido</span>
+        </div>
+    </div>
+</div>

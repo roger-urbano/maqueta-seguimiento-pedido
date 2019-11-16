@@ -1,0 +1,150 @@
+@import "../../../../../app/core/assets/scss/variables";
+@import "../../../../../app/core/assets/scss/breakpoints";
+@import "../../../../../app/core/assets/scss/mixins";
+
+.wrap-filter {
+    .input-group {
+        position: relative;
+        flex: 1;
+        &.input-search {
+            flex: 2;
+        }
+        &.input-check {
+            flex: inherit;
+        }
+    }
+    .form-control {
+        padding-left: 2.2rem;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        color: $color-second;
+        font-size: 0.9rem;
+        border: 0;
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: $color-second;
+            opacity: 1; /* Firefox */
+          }
+          
+          &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: $color-second;
+          }
+          
+          &::-ms-input-placeholder { /* Microsoft Edge */
+            color: $color-second;
+          }
+    }
+    .icono-input {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        z-index: 10;
+        pointer-events: none;
+        color: $color-one;
+    }
+}
+
+// CUSTOM DATA PICKER 
+::ng-deep .bs-datepicker-head button {
+    color: #fff !important;
+    text-transform: capitalize !important;
+}
+
+::ng-deep .bs-datepicker-body table.months td {
+    text-transform: capitalize !important;
+}
+
+::ng-deep .bs-datepicker-body table th {
+    text-transform: capitalize !important;
+}
+
+@media screen and (max-width: $md-device-tablet) {
+    .collapsed-filter  {
+        background: linear-gradient(90deg, #ff4028 0%, #ff9200 50%)
+    }
+    .wrap-filter {
+        .input-group {
+            flex: none;
+            max-width: inherit;
+            width: 48%;
+            &.input-search {
+                flex: none;
+                width: 75%;
+                .form-control {
+                    background: rgba(255, 255, 255, 0.3);
+                    border-radius: 27px;
+                    color: #fff;
+                    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                        color: #fff;
+                        opacity: 1; /* Firefox */
+                      }
+                }
+            }
+            &.input-check {
+                flex: none;
+                width: 25%
+            }
+        }
+        .icono-input {
+            color: #fff !important;
+        }
+    }
+
+    .collapsed-filter {
+        .button {
+            background-color: #fff;
+            color: $color-one;
+        }
+    }
+
+    .input-check {
+        .color-two {
+            color: #fff !important;
+        }
+    }
+}
+
+@media screen and (max-width: $sm-device-mobile) {
+    .wrap-filter {
+        .input-group {
+            width: 48%;
+            &.input-search {
+                flex: none;
+                width: 70%;
+            }
+            &.input-check {
+                flex: none;
+                width: 30%
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .wrap-filter {
+        .input-group {
+            flex: none;
+            max-width: inherit;
+            width: 100%;
+            margin-bottom: 1rem;
+            &.input-search {
+                flex: none;
+                width: 100%;
+                margin-top: 0 !important;
+                .form-control {
+                    background: rgba(255, 255, 255, 0.3);
+                    border-radius: 27px;
+                    color: #fff;
+                    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                        color: #fff;
+                        opacity: 1; /* Firefox */
+                      }
+                }
+            }
+            &.input-check {
+                flex: none;
+                width: 100%
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+<div class="card-traking card-invoice p-3" @fadeInUpMulti>
+    <div class="card-traking-header d-flex justify-content-between align-items-center mb-2">
+        <h4 class="card-traking-title text-sm color-two font-weight-bold mb-0">
+            <i class="ficon-file-text ficon-sm color-one ficon"></i>
+            <span>Factura |</span> {{ invoice.code }}
+        </h4>
+        <a href="" class="color-one text-line-h pl-2 link-modal text-decoration-none">
+            <span href="" class="text-sm color-one ">
+                Nivel servicio
+            </span>
+            <i class="ficon-eye ml-2 text-lg align-middle"></i>
+        </a>
+    </div>
+    <div class="card-traking-body d-block">
+        <ul class="card-list-info list-unstyled mb-0">
+            <li class="card-item-info text-sm color-three">
+                <strong class="mr-1">Moneda:</strong><span class="text-uppercase">PEN</span>
+            </li>
+            <li class="card-item-info text-sm color-three">
+                <strong class="mr-1">Descripción:</strong><span class="text-uppercase">NOTA DE DEBITO</span>
+            </li>
+            <li class="card-item-info text-sm color-three">
+                <strong class="mr-1">Fecha Fact:</strong><span class="text-uppercase">09/10/2019</span>
+            </li>
+            <li class="card-item-info text-sm color-three">
+                <strong class="mr-1">Fecha Venc:</strong><span class="text-uppercase">08/11/2019</span>
+            </li>
+        </ul>
+        <div class="card-traking-footer mt-3">
+            <p class="text-sm color-three mb-0">
+                <strong class="d-block">Condición de pago:</strong>
+                Crédito 30 días fecha factura + 5 DG (PE)
+            </p>
+        </div>
+    </div>
+</div>

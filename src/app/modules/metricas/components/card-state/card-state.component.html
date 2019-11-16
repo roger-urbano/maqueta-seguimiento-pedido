@@ -1,0 +1,11 @@
+<a  
+    [routerLink]="['/metrics/detail/', dispatchStates.id]"
+    @childFadeAnimate class="item-dispatch shadow d-flex justify-content-between align-items-center p-2">
+    <figure class="figure-dispatch d-flex justify-content-center align-items-center my-auto px-2 px-md-2 px-lg-3">
+        <img class="icono-dispatch" [src]="dispatchStates.svg" alt="">
+    </figure>
+    <div class="d-flex justify-content-center align-items-center descrip-dispatch flex-column">
+        <span class="number-pre rounded-circle d-flex justify-content-center align-items-center">3</span>
+        <h5 class="text-dispatch mt-2">{{ dispatchStates.name }}</h5>
+    </div>
+</a>

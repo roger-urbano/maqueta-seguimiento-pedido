@@ -1,0 +1,37 @@
+<div class="header bg-white">
+    <div class="container-fluid py-2">
+      <div class="row">
+        <div class="col-8 col-sm-4">
+          <div class="d-flex d-sm-flex align-items-center h-100">
+            <button class="btn d-flex p-1 mr-2 color-one" type="button" (click)="onChangeSidebar()">
+              <i class="material material-icons"> menu </i>
+            </button>
+            <img alt="logo_quimiventa" class="d-inline-block d-sm-none xs-image" src="assets/images/logo.png">
+          </div>
+        </div>
+        <div class="col-sm-4 d-none d-sm-block">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <a href="index.html" class="d-inline-block">
+              <img alt="logo_quimiventa" src="assets/images/logo.png">
+            </a>
+          </div>
+        </div>
+        <div class="col-4 col-sm-4 d-flex justify-content-end align-items-center">  
+          <div class="dropdown">
+            <a class="d-inline-block name-user" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img alt="foto_usuario" class="rounded-circle" src="assets/images/customer.png" width="35px"  height="35px" >
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-shadow border-0" aria-labelledby="dropdownMenuButton">
+              <h6 class="dropdown-header">11583</h6>
+              <span class="dropdown-item-text">Nombre de usuario</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<qsi-section-navbar class="d-none d-md-block"></qsi-section-navbar>
+<qsi-section-navbar-responsive class="d-block d-md-none"></qsi-section-navbar-responsive>
+<qsi-section-breadcrumbs class="d-none d-md-block"></qsi-section-breadcrumbs>
+
+<qsi-section-sidebar [showMenu]='showMenu' (closeEventEmiter)="onChangeSidebarExt($event)"></qsi-section-sidebar>

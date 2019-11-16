@@ -1,0 +1,14 @@
+<div class="qsi-breadcrumbs">
+    <div class="container-fluid py-2">
+        <div class="row">
+            <div class="col-md-2 col-lg-2 d-none d-md-block"></div>
+            <div class="col-12 col-md-10 col-lg-10 d-flex align-items-center">
+                <div class="breadcrumbs">
+                    <a href="" *ngFor="let item of (breadcrumbsData$|async)?.list">
+                        {{item.name}}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

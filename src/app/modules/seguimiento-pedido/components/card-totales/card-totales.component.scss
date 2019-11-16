@@ -1,0 +1,49 @@
+.totales {
+    .totales-content {
+      border-radius: .5rem;
+      .totales-header {
+        color: #fff;
+        font-size: .9rem;
+        text-align: center;
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+        padding: .35rem .25rem;
+        background-image: linear-gradient(to right, #ff4028, #ff9200);
+      }
+      .totales-body {
+        background-color: #ffffff;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+        padding: .35rem .5rem;
+        p {
+          font-size: 80%;
+          margin-bottom: .5rem;
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    .totales {
+      position: fixed;
+      padding: 0 1rem;
+      right: 0;
+      top: 180px;
+      max-width: 22.3%;
+      width: 100%;
+      z-index: 1029;
+      transition: top .3s ease;
+      &.totales-scroll {
+        top: 1rem;
+      }
+      .totales-content {
+        box-shadow: 0 1px 1px rgba(0,0,0,0.12),                                 
+                  0 2px 2px rgba(0,0,0,0.12),                                 
+                  0 4px 4px rgba(0,0,0,0.12),                                 
+                  0 8px 8px rgba(0,0,0,0.12),                                
+                  0 16px 16px rgba(0,0,0,0.12);
+        .totales-body {
+          background-color: white;
+        }
+      }
+    }
+  }

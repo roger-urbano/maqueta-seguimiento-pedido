@@ -1,0 +1,12 @@
+<div class="card-traking mb-3 p-3" @fadeInUpMulti>
+    <div class="card-traking-header d-flex justify-content-between align-items-center">
+        <div class="pr-3">
+            <h4 class="cardt-traking-title text-sm color-two font-weight-bold text-uppercase mb-0">{{order.name}}</h4>
+            <span class="color-one text-sm">Código: {{order.order}}</span>
+        </div>
+        <div class="form-group m-0 input-order">
+            <small class="d-block color-three text-center text-xs">Cantidad</small>
+            <input class="form-control form-control-sm text-center" [value]="order.count" type="text" disabled="">
+        </div>
+    </div>
+</div>

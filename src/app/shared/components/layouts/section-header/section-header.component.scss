@@ -1,0 +1,10 @@
+.name-user {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: all .3s ease;
+    &:hover, &:focus {
+        box-shadow: 0px 0px 0px 2px #ff531e, 
+                    0px 0px 10px #ff9200;
+    }
+}

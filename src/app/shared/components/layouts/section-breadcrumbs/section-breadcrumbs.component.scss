@@ -1,0 +1,27 @@
+.qsi-breadcrumbs {
+    padding: 10px 0;
+    background: rgb(255,64,40);
+    background: linear-gradient(90deg, rgba(255,64,40,1) 0%, rgba(255,146,0,1) 50%);
+    position: relative;
+    a {
+        color: white;
+        display: inline-block;
+        font-size: 12px;
+        &:first-child {
+            &::before {
+                content: '';
+                display: none;
+            }
+        }
+        &::before {
+            content: "//";
+            display: inline-block;
+            padding: 0rem .25rem;
+            font-weight: normal;
+        }
+        &:last-child {
+            font-weight: bold;
+            pointer-events: none;
+        }
+    }
+}
